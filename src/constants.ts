@@ -2,9 +2,9 @@ import { Address, Cell, toNano } from '@ton/core';
 import { sha256Hash } from './utils/sha256BigInt';
 
 export const EVAA_MASTER_MAINNET = Address.parse('EQC8rUZqR_pWV1BylWUlPNBzyiTYVoBEmQkMIQDZXICfnuRr');
-export const MAINNET_VERSION = 4;
+export const MAINNET_VERSION = 5;
 export const EVAA_MASTER_TESTNET = Address.parse('kQCj7qf3i2Cbf1GVtZCinla7lIvE7l3MBMsJMTfAja3BdoRP');
-export const TESTNET_VERSION = 4;
+export const TESTNET_VERSION = 5;
 
 export const NFT_ID = '0xfb9874544d76ca49c5db9cc3e5121e4c018bc8a2fb2bfe8f2a38c5b9963492f5';
 

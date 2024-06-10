@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.5.0 - 2024-06-10
+This release contains breaking changes. Todo liquidation calculations with reserve factor from master config 
+
+### Added
+- Amount to transfer on supply / withdrawal  
+- Payload to transfer on supply / withdrawal  
+- Tracking variables parsing on user & master sc
+- Reserve variables parsing on user & master sc
+
+### Changed
+- Master contracts' version
+- Testnet master contract address
+- Parsers on master sc 
+- Parsers on user sc 
+
+### Removed
+
+### Fixed
+
 ## 0.4.0 - 2024-06-01
 This release contains breaking changes.
 
