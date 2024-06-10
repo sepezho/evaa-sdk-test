@@ -27,6 +27,11 @@ export type AssetConfig = {
     originationFee: bigint;
     dust: bigint;
     maxTotalSupply: bigint;
+    reserveFactor: bigint;
+    liquidationReserveFactor: bigint;
+    minPrincipalForRewards: bigint;
+    baseTrackingSupplySpeed: bigint;
+    baseTrackingBorrowSpeed: bigint;
 };
 
 export type MasterConfig = {
@@ -37,6 +42,8 @@ export type MasterConfig = {
     walletToMaster: Cell | null;
 };
 
+
+
 export type AssetData = {
     sRate: bigint;
     bRate: bigint;
@@ -44,6 +51,9 @@ export type AssetData = {
     totalBorrow: bigint;
     lastAccural: bigint;
     balance: bigint;
+    trackingSupplyIndex: bigint;
+    trackingBorrowIndex: bigint;
+    lastTrackingAccural: bigint;
 };
 
 export type AssetInterest = {

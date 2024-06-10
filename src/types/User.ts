@@ -43,6 +43,9 @@ export type UserLiteData = {
     trackingBorrowIndex: bigint;
     dutchAuctionStart: number;
     backupCell: Cell;
+    rewards: Dictionary<bigint, UserRewards>;
+    backupCell1: Cell | null;
+    backupCell2: Cell | null;
 };
 
 export type UserDataActive = UserLiteData & {
@@ -64,3 +67,8 @@ export type UserDataInactive = {
 };
 
 export type UserData = UserDataActive | UserDataInactive;
+
+export type UserRewards = {
+    trackingIndex: bigint;
+    trackingAccured: bigint;
+};
