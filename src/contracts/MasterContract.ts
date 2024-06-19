@@ -218,9 +218,9 @@ export class Evaa implements Contract {
             .storeUint(parameters.amount, 64)
             .storeAddress(parameters.userAddress)
             .storeInt(parameters.includeUserCode ? -1 : 0, 2)
-            .storeRef(parameters.priceData)
             .storeUint(parameters.amountToTransfer, 64)
             .storeRef(parameters.payload)
+            .storeRef(parameters.priceData)
             .endCell();
     }
 
