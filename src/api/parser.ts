@@ -261,12 +261,12 @@ export function parseUserData(
                     0n,
                 ),
             );
-        } else {
-            borrowLimits.set(
-                assetID,
-                bigIntMin((availableToBorrow * 10n ** assetConfig.decimals) / prices.get(assetID)!, assetData.balance),
-            );
         }
+ 
+        borrowLimits.set(
+            assetID,
+            bigIntMin((availableToBorrow * 10n ** assetConfig.decimals) / prices.get(assetID)!, assetData.balance),
+        );
     }
 
     const limitUsed = borrowBalance + availableToBorrow;
